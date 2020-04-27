@@ -1,0 +1,16 @@
+ <div class="show-item-container">
+  <div class="image-item-show">
+    <p><%= link_to "Home", root_path %> / <%= link_to "Menu", menus_path %> / <%= @pizza.title %></p>
+    <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Camera">
+      <div class="text-block">
+        <div class="card-product">
+            <h2><%= @pizza.title %></h2>
+            <p><%= @pizza.description %></p>
+          </div>
+          <div class="card-trip">
+            <h2>R$ <%= @pizza.price %></h2>
+        </div>
+        <%= link_to "Button", menus_path, class: "btn btn-dark" %>
+      </div>
+  </div>
+</div>

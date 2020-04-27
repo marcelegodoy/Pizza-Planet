@@ -1,0 +1,40 @@
+@media screen and (min-width: 1612px) {
+  .display-pizzas-menu-home {
+    margin: auto;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    img {
+      width: 23vw;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .display-pizzas-menu-home {
+    margin: auto;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    img {
+      width: 23vw;
+    }
+  }
+}
+
+#carouselExampleIndicators {
+  height: 40vh;
+}
+
+.carousel-inner {
+  height: 40vh;
+}
+
+.menu-home-cards {
+    display: grid;
+    grid-gap: 15px;
+    margin: 2%;
+    /* flex-grow: 1; */
+}

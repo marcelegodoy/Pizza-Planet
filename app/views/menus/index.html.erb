@@ -1,0 +1,10 @@
+ <div class="index-item-container">
+  <div class="cards">
+      <% @pizzas.each do |pizza| %>
+        <div class="card">
+          <h2><%= link_to pizza.title, menu_path(pizza) %></h2>
+          <h5>R$ <%= pizza.price %></h5>
+        </div>
+      <% end %>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.show-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin: 2%;
+  flex-grow: 1;
+}
+
+.image-item-show img {
+  width: 40vw;
+}
+
+.image-item-show a {
+  color: #000000;
+}
+
+.image-item-show a:hover {
+  color: #20c997;
+}
