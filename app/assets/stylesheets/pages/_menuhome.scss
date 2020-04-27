@@ -1,35 +1,66 @@
-@media screen and (min-width: 1612px) {
+@media screen and (min-width: 600px) {
   .display-pizzas-menu-home {
     margin: auto;
-    width: 75vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
-    img {
-      width: 23vw;
+  }
+  .menu-home-cards {
+    display: grid;
+    grid-gap: 15px;
+    margin: 2%;
+    .menu-home-cards img {
+      width: 100vw;
     }
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
   .display-pizzas-menu-home {
     margin: auto;
-    width: 75vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
     img {
-      width: 23vw;
+      max-width: 100%;
     }
   }
 }
 
-#carouselExampleIndicators {
-  height: 40vh;
+@media screen and (min-width: 1612px) {
+  .display-pizzas-menu-home {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
-.carousel-inner {
-  height: 40vh;
+img {
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  img {
+    height: 40vh;
+    object-fit: cover;
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 40vh;
+  }
+  .carousel-control-prev {
+    height: 40vh;
+  }
+  .carousel-control-next {
+    height: 40vh;
+  }
 }
 
 .menu-home-cards {

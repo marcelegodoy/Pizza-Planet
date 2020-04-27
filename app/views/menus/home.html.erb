@@ -1,9 +1,4 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="https://images.pexels.com/photos/1049620/pexels-photo-1049620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="First slide" class="carousel-image">
@@ -52,7 +47,7 @@
       <% @top_pizzas.each do |pizza| %>
         <div class="menu-home-cards" >
           <%= link_to image_tag("https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
-             root_path %>
+             menu_path(pizza) %>
             <h2><%= link_to pizza.title, menu_path(pizza) %></h2>
             <p><%= pizza.description %></p>
             <h2><%= pizza.price %></h2>
@@ -67,7 +62,7 @@
       <% @last_pizzas.each do |pizza| %>
         <div class="menu-home-cards" >
           <%= link_to image_tag("https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
-                 root_path %>
+                 menu_path(pizza) %>
             <h2><%= link_to pizza.title, menu_path(pizza) %></h2>
             <p><%= pizza.description %></p>
             <h2><%= pizza.price %></h2>

@@ -1,5 +1,5 @@
 class Pizza < ApplicationRecord
-  validates :title, presence: true, uniqueness: true
+  validates :title, presence: true
   validates :price, presence: true
   validates :description, presence: true
   validates :ingredients, presence: true

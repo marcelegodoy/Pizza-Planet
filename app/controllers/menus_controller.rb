@@ -6,9 +6,9 @@ class MenusController < ApplicationController
       @pizzas = Pizza.all
       # sort the services according to how many orders the have (desc). Get the first 10
       # @top_pizzas = @pizzas.sort_by { |pizza| -pizza.orders.size }.first(8)
-      @top_pizzas = @pizzas.last(8).reverse
+      @top_pizzas = @pizzas.last(6).reverse
       # get the last uploaded services in the database
-      @last_pizzas = @pizzas.last(8).reverse
+      @last_pizzas = @pizzas.last(6).reverse
       # pegar os usuarios que mais vendem serviços
       # @orders = Order.all
     end
